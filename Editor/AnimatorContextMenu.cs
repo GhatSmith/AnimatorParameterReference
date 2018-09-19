@@ -7,7 +7,7 @@ using System.IO;
 [ClassSummary("Add context menu item for Animator assets")]
 public static class AnimatorContextMenu
 {
-    [MenuItem("Assets/Odd/Animator/Generate Parameters References")]
+    [MenuItem("Assets/Animator/Generate Parameters References")]
     private static void GenerateAllReferences()
     {
         AnimatorController animatorController = Selection.activeObject as AnimatorController;
@@ -47,7 +47,7 @@ public static class AnimatorContextMenu
     }
 
 
-    [MenuItem("Assets/Odd/Animator/Generate Parameters References", true)]
+    [MenuItem("Assets/Animator/Generate Parameters References", true)]
     private static bool SelectionIsAnimator()
     {
         return Selection.activeObject is AnimatorController;
